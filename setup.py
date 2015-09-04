@@ -13,6 +13,6 @@ setup(name="untwisted",
       packages=["untwisted", 
                 "untwisted.utils"],
       author="Iury O. G. Figueiredo",
-      author_email="ioliveira@id.uff.br")
+      author_email="ioliveira@id.uff.br",
       cmdclass = {'build_py': build_py}
 )
