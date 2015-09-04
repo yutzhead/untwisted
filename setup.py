@@ -8,19 +8,11 @@ try:
 except ImportError:
    from distutils.command.build_py import build_py
 
-setup(name="vy",
+setup(name="untwisted",
       version="0.1",
-      packages=["vyapp", 
-                "vyapp.plugins",
-                "vyapp.plugins.syntax",
-                "vyapp.plugins.omen",             
-                "vyapp.plugins.syntax.themes",
-		"vyapp.plugins.jdb",
-		"vyapp.plugins.pdb"],
-      #package_dir={'vyapp':'vyapp'},
-      scripts=['vy'],
-      package_data={'vyapp': ['vyrc', '/vyapp/vyrc']},
+      packages=["untwisted", 
+                "untwisted.utils"],
       author="Iury O. G. Figueiredo",
-      author_email="ioliveira@id.uff.br",
+      author_email="ioliveira@id.uff.br")
       cmdclass = {'build_py': build_py}
 )
